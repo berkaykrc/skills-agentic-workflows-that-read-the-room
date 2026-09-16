@@ -1,6 +1,7 @@
 ---
 name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
+model: gpt-5-mini
 on:
   workflow_dispatch:
   schedule:
@@ -16,6 +17,7 @@ tools:
 network:
   allowed:
     - github
+    - awesome-copilot.github.com
 ---
 
 # Update Mona's GitHub Info website
@@ -27,6 +29,10 @@ Use these sources:
 - `notes/mona-notes.md`
 - GitHub Blog: https://github.blog/latest/
 - GitHub Changelog: https://github.blog/changelog/
+- Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
+
+Web fetch https://awesome-copilot.github.com/workflows/ when gathering the
+workflow sources.
 
 Update `site/content/github-info.md` with concise, practical updates for
 readers. Include source context when content comes from the GitHub Blog or
