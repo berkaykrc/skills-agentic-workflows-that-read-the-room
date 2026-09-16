@@ -1,7 +1,7 @@
 ---
 name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
-model: claude-haiku-4.5
+model: gpt-5-mini
 on:
   workflow_dispatch:
   schedule:
