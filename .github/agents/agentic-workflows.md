@@ -1,7 +1,7 @@
 ---
 name: Agentic Workflows
 description: GitHub Agentic Workflows (gh-aw) - Create, debug, and upgrade AI-powered workflows with intelligent prompt routing.
-tools: [vscodeGeneral/rename, vscodeNotebooks/createJupyterNotebook, vscodeNotebooks/editNotebook, edit]
+tools: [read, vscodeGeneral/rename, vscodeNotebooks/createJupyterNotebook, vscodeNotebooks/editNotebook, edit]
 disable-model-invocation: true
 ---
 
