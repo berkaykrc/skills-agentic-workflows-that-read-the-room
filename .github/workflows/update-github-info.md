@@ -1,12 +1,15 @@
 ---
 name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
-model: gpt-5-mini
+engine:
+  id: copilot
+  model: gpt-5-mini
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 9 * * *"
 safe-outputs:
+  report-failure-as-issue: false
+  threat-detection:
+    continue-on-error: true   # Warnings only (default)
   create-pull-request:
     title-prefix: "[mona] "
     draft: true
