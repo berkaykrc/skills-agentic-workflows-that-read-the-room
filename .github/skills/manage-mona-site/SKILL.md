@@ -1,10 +1,9 @@
 ---
-description: Start, stop, or restart Mona's Astro site for local development or Codespaces.
 name: manage-mona-site
+description: "Start, stop, or restart Mona's Astro site for local development or Codespaces."
+disable-model-invocation: false
 argument-hint: Choose start, stop, or restart. You can also include an optional port.
-agent: agent
 ---
-
 # Manage Mona's Astro site
 
 Manage the Astro website in the `site/` directory for this repository.
