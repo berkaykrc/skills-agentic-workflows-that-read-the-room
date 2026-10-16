@@ -20,6 +20,7 @@ tools:
 network:
   allowed:
     - github
+    - github.blog
     - awesome-copilot.github.com
 ---
 
